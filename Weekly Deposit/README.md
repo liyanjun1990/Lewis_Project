@@ -1,7 +1,7 @@
 # Description of the File
 
 ## BS.py - to consolidate bank statements across multiple entities with different stores. 
-- This script is designed to include only cash deposit transactions, streamlining the bank statement consolidation process. 
+- designed to include only cash deposit transactions, streamlining the bank statement consolidation process. 
 - The resulting data will be used in an Excel VBA interface for monitoring cash transactions.
 
 ## Vend_sele.py

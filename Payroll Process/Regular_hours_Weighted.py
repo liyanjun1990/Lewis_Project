@@ -1,9 +1,6 @@
 import pandas as pd
 from datetime import datetime , timedelta
 
-file_path = r"\\192.168.1.223\Payroll\Payroll\20230130-20230212\prun.csv"
-file_payrate = r"C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Desktop\Payroll Data\Result\payroll_rate.csv"
-
 df_payrate = pd.read_csv(file_payrate)
 df_payrate['Code'] = df_payrate['Code'].astype('string')
 df_payrate = df_payrate[['Code','STATUS_1','STATUS_2','STATUS_3']]
@@ -64,3 +61,4 @@ Result_Pivot = Result_Pivot[['Mon','Tue','Wed','Thu','Fri','Sat','Sun']]
 Result_Pivot['total'] = Result_Pivot[['Mon','Tue','Wed','Thu','Fri','Sat','Sun']].sum(axis=1)
 Result_Pivot = Result_Pivot.reset_index()
 Result_Pivot_merge = Result_Pivot.merge(df_payrate,left_on='Emp_id',right_on='Code',how='left')
+Result_Pivot_merge.to_csv('RH.csv')

@@ -7,6 +7,10 @@ I developed an Excel VBA user interface for our weekly cash deposit process, whi
 ## Payroll Process Project 
 
 ## Esential API
+I have created a script that retrieves data from MYOB Essential. 
+The script is designed to gather 
+- the monthly balance and profit and loss report
+- employee information.
 
 ## E-commerence Project
 

@@ -6,8 +6,8 @@ import math
 last_payrun_day = input("Open Payunrun Day: YYYY-MM-DD")
 last_payrun_day = datetime.strptime(last_payrun_day,"%Y-%m-%d")
 
-file_path = r"C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Desktop\Payroll Data\Result\payroll_rate.csv"
-file_path_check = r"C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Desktop\Payroll Data\Result\RateLevel Table.xlsx"
+file_path = "payroll_rate.csv"
+file_path_check = "RateLevel Table.xlsx"
 
 df = pd.read_csv(file_path,index_col=0,parse_dates=['Birth Date','Start Date'],dayfirst=True)
 df_shop = df[df['Company'].isin(['SA','TC','NQ','PPA','IPA','TT'])]

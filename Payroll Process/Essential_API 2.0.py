@@ -8,8 +8,6 @@ import credential
 
 Rate_Table = pd.read_csv('Rate_Table.csv')
 
-#MYOB_API_KEY =  '9w23pm6xkdkbzue3xqpte8fu'
-#MYOB_API_SECRET = '7eGf7BEJ9Mzvzx5hDXe9JfDZ'
 MYOB_API_KEY =  credential.MYOB_API_KEY
 MYOB_API_SECRET = credential.MYOB_API_SECRET
 MYOB_API_REDIRECT_URI = 'http://desktop'

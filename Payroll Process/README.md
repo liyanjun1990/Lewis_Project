@@ -39,7 +39,7 @@ The script is intended to create transactions in the payroll fact database based
 Once the Area Manager has completed the shortage report, adjustments will be made to the timesheet using the Excel interface. The Entry_Check_List2.0.py will generate transactions to reflect the adjustments, which will then be added to the payroll database and made available for importing into the payroll system.
 
 ## Excel interface (due to the condidential information, the excel sheet is not in the folder)
-The Excel interface will create a CSV file ,that can be utilized to import the timesheet into both the EXO and Essential payroll systems, from the payroll fact database.
+The timesheet from the payroll fact database can be exported in CSV format using the Excel interface, which is compatible with both EXO and payroll systems.
 
 Once the timesheet is imported into the EXO and Essential payroll system, a comparison will be performed between the payrun results and the timesheet to verify the accuracy of the payment and the super payable at the employee level.
 

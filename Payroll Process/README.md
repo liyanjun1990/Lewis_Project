@@ -19,6 +19,9 @@ This script is employed to retrieve employee data from the EXO payroll database 
 ### Check_RateTable.py
 The primary purpose of this script is to perform an integrity check on the pay rates of employees and ensure that they have been set up accurately according to the Modern Award. Additionally, the script verifies whether the cost center has been configured correctly.
 
+### Deputy_Lib.py and Deputy2.1.py
+The purpose of the script is to retrieve both employee information and their timesheet data from Deputy. Additionally, it can also request for modified timesheets that were edited after the cut-off time for approval, in order to ensure that the most up-to-date timesheet information is available.
+
 ## Automate Public Holiday pay calculation
 
 ### Regular_hours_Weighted.py

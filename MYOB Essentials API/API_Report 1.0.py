@@ -164,15 +164,3 @@ elif APIfor=="AN":
         AN_Request.request_info(request_url=requestPandLY, output_Json=rf'./PLBS/{company_name}_Detail_Yearly')
         AN_Request.request_info(request_url=requestBS, output_Json=rf'./PLBS/{company_name}_Detail_BS')
         AN_Request.request_info(request_url='/GeneralLedger/Account', output_Json=rf'./PLBS/{company_name}_Account')
-
-
-
-
-
-#account_json = []
-#for i in PL_Balance['AccountsBreakdown']:
-#    temp_json = TT_Request.request_info(allurl=True,request_url=i['Account']['URI'])
-#    account_json.append(temp_json)
-
-#with open('account_detail.json', 'w', encoding='utf-8') as f:
-#    json.dump(account_json, f, ensure_ascii=False, indent=4)

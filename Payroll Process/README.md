@@ -34,14 +34,15 @@ A user interface has been developed in Excel to conduct integrity checks on time
 In cases where a full-time employee or a salaried employee fails to work the required number of hours (76 hours), the system will automatically assign leave entitlement to make up for the shortage. This will be done in a specific order, starting with time in lieu overtime, followed by time in lieu public holiday penalty, approved sick leave, approved annual leave, and then approved unpaid leave. The system will then generate a report of any shortfall, which can be used to communicate with the Area Manager about any discrepancies such as insufficient work hours, excessive use of approved annual leave or sick leave, or a low balance of available leave.
 
 ## Entry_Check_List2.0.py
-The script is intended to create transactions in the payroll fact database based on the modifications made in the Excel interface.
+The script is intended to create transactions in the payroll fact temporary table based on the modifications made in the Excel interface.
 
-Once the Area Manager has completed the shortage report, adjustments will be made to the timesheet using the Excel interface. The Entry_Check_List2.0.py will generate transactions to reflect the adjustments, which will then be added to the payroll database and made available for importing into the payroll system.
+Once the Area Manager has completed the shortage report, adjustments will be made to the timesheet using the Excel interface. The Entry_Check_List2.0.py will generate transactions to reflect the adjustments, which will then be added to the payroll fact temporary table and made available for importing into the payroll system.
 
 ## Excel interface (due to the condidential information, the excel sheet is not in the folder)
-The timesheet from the payroll fact database can be exported in CSV format using the Excel interface, which is compatible with both EXO and payroll systems.
+The timesheet from the payroll fact temporary table can be exported in CSV format using the Excel interface, which is compatible with both EXO and payroll systems.
 
 Once the timesheet is imported into the EXO and Essential payroll system, a comparison will be performed between the payrun results and the timesheet to verify the accuracy of the payment and the super payable at the employee level.
 
-
+## update_summary.py
+The purpose of the script is to transfer the payroll fact temporary table and the temporary employee dimension table into the permanent database. This is done to make them available for reporting purposes, including Power BI reporting and other types of reporting.
 

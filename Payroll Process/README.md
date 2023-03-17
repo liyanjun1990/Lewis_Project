@@ -45,4 +45,3 @@ Once the timesheet is imported into the EXO and Essential payroll system, a comp
 
 ## update_summary.py
 The purpose of the script is to transfer the payroll fact temporary table and the temporary employee dimension table into the permanent database. This is done to make them available for reporting purposes, including Power BI reporting and other types of reporting.
-

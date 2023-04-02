@@ -2,9 +2,6 @@ import os
 import pandas as pd
 from datetime import datetime
 
-path = r"C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Documents\GitHub\pythonProject\Deposit_Check\VR\\"
-combine_path = r"C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Documents\GitHub\pythonProject\Deposit_Check\url.csv"
-
 # vend download
 df = pd.DataFrame()
 for i in os.listdir(path):

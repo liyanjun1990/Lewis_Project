@@ -7,26 +7,6 @@ import numpy as np
 
 Rate_Table = pd.read_csv('Rate_Table.csv')
 
-#MYOB_API_KEY =  '9w23pm6xkdkbzue3xqpte8fu'
-#MYOB_API_SECRET = '7eGf7BEJ9Mzvzx5hDXe9JfDZ'
-MYOB_API_KEY =  '9761420c-7b03-45cb-88f4-91279f5fd87c'
-MYOB_API_SECRET = 'x3moZxUt440LGY0HauO0ZcBA'
-MYOB_API_REDIRECT_URI = 'http://desktop'
-MYOB_CFTOKEN = 'YW5uZS56aGFuZ0BwdGMubmV0LmF1OkpheTYyMzEzMTg='
-CHROME_PROFILE = r'C:\Users\Accounting - 10102\AppData\Local\Google\Chrome\User Data\Profile 1'
-MYOB_PASSWORD = 'Jay6231318'
-
-MYOB_TT_API_KEY = '9761420c-7b03-45cb-88f4-91279f5fd87c'
-MYOB_TT_API_SECRET = 'x3moZxUt440LGY0HauO0ZcBA'
-MYOB_TT_API_REDIRECT_URI = 'http://desktop'
-
-MYOB_DIS = '5c378af8-84d0-497f-985d-23ef38952500'
-MYOB_TT = 'e137ea9a-7dcb-4cd7-a305-6d7c415bd8a5'
-MYOB_CON = '0bfb6947-ff4c-4450-acd3-1916414d6df9'
-# ----- #
-#use the printed token_url to get the url_encode, paste down
-#need to run two times, One for Annie, One for TT
-
 APIfor = input()
 if APIfor == 'AN':
     token_url = f'https://secure.myob.com/oauth2/account/authorize?client_id={MYOB_API_KEY}&redirect_uri={MYOB_API_REDIRECT_URI}&response_type=code&scope=CompanyFile'

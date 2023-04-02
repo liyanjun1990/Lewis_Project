@@ -34,7 +34,7 @@ class Deputy_API:
         }
 
     def get_employees_by_start_id(self,start_id):
-        employee_url = f'https://ptcrepairs.au.deputy.com/api/v1/supervise/employee/QUERY'
+        employee_url = f'https://demo.com/api/v1/supervise/employee/QUERY'
 
         headers = self.API_header
 
@@ -48,13 +48,13 @@ class Deputy_API:
 
     def get_location_list(self):
 
-        location_url = f'https://ptcrepairs.au.deputy.com/api/v1/resource/Company'
+        location_url = f'https://demo.com/api/v1/resource/Company'
 
         response = requests.get(location_url,headers=self.API_header)
         return json.loads(response.text)
 
     def get_timesheet_range_modified(self,date):
-        timesheet_url = f'https://ptcrepairs.au.deputy.com/api/v1/resource/Timesheet/QUERY'
+        timesheet_url = f'https://demo.com/api/v1/resource/Timesheet/QUERY'
 
         headers = {
             'Content-type': 'application/json',
@@ -74,7 +74,7 @@ class Deputy_API:
         return json.loads(response.text)
 
     def get_timesheet_by_date(self,date):
-        timesheet_url = f'https://ptcrepairs.au.deputy.com/api/v1/resource/Timesheet/QUERY'
+        timesheet_url = f'https://demo.deputy.com/api/v1/resource/Timesheet/QUERY'
 
         js = {
             "search": {"s1": {"field": 'Date', "data": f"%{date}%", "type": "lk"},
@@ -88,7 +88,7 @@ class Deputy_API:
         return json.loads(response.text)
 
     def get_timesheet_by_unix(self,start,end,approve=True):
-        timesheet_url = f'https://ptcrepairs.au.deputy.com/api/v1/resource/Timesheet/QUERY'
+        timesheet_url = f'https://demo.com/api/v1/resource/Timesheet/QUERY'
         if approve == True:
             js = {
                 "search": {"s1": {"field": 'StartTime', "data": f"{start}", "type": "ge"},

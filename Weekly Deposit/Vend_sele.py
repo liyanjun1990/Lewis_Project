@@ -29,14 +29,13 @@ import pandas as pd
 
 todayis = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=1)
 
-download_path = r'C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Documents\GitHub\pythonProject\Deposit_Check\VR\\'
+download_path = r'Deposit_Check\VR\\'
 
 chromeOptions = webdriver.ChromeOptions()
 prefs = {"download.default_directory" : download_path}
 chromeOptions.add_experimental_option("prefs",prefs)
 
-#browser = webdriver.Chrome(r"C:\Users\admin\Desktop\AUTO\chromedriver.exe",options=chromeOptions)
-browser = webdriver.Chrome(r"C:\Users\Accounting - 10102\Desktop\AUTO\chromedriver.exe",options=chromeOptions)
+browser = webdriver.Chrome(chromedriver.exe,options=chromeOptions)
 
 browser.get('https://ptcrepairs.vendhq.com/dashboards')
 
@@ -119,4 +118,4 @@ for i in range(start_page,100):
 
 df['merge_helper'] = [i + str(j) for i,j in zip(df['Register'],df['#'])]
 
-df.to_csv(r"C:\Users\Accounting - 10102\OneDrive - PTC Phone Tech and Comm\Documents\GitHub\pythonProject\Deposit_Check\url.csv",index=False)
+df.to_csv("url.csv",index=False)
